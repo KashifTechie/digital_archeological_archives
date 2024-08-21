@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #top {
+      display: flex;
+      position: relative
+    }
+
+    #logo {
+      width: 50px;
+      border-radius: 50%;
+      border: 1px black solid
+    }
+
+    #logo:hover {
+      transform: scale(1.08);
+      transition: transform 0.7s ease-in-out;
+
+    }
+
+    #center {
+      position: absolute;
+      padding: 0px;
+      margin: 0px;
+      left: 35%;
+      -webkit-text-stroke: 1px rgb(28, 23, 23);
+      font-size: 40px;
+      color: palevioletred;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #center:hover {
+      color: lightcoral;
+      text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .img {
+      width: 218px;
+      height: 150px;
+    }
+
+    .img:hover {
+      transform: scale(1.3);
+      transition: transform 0.7s ease-in-out;
+      border-radius: 10%;
+    }
+
+    .div-image {
+      margin: 5px 45px 5px 45px;
+      padding: 2.5px 2.5px;
+      display: flex;
+      gap: 5px;
+      justify-content: space-around;
+    }
+
+    .para {
+      display: flex;
+      text-align: justify;
+      margin: 5px 0px 20px 0px;
+    }
+
+    .para:hover {
+      color: #0056b3;
+    }
+
+    .heading {
+      margin: 0px
+    }
+
+    .videos {
+      display: flex;
+      justify-content: space-between;
+      border: 2px olive solid;
+      width: 99%;
+    }
+
+    /* */
+    .heritage_videos {
+      margin: 10px;
+    }
+
+    #video1:hover {
+      transform: translate(300px, 10px) scale(1.3);
+      transition: transform 0.9s ease-in-out;
+    }
+
+    #video2:hover {
+      transform: translate(-300px, 10px) scale(1.3);
+      transition: transform 0.9s ease-in-out;
+    }
+
+    #greet {
+      color: chocolate;
+      -webkit-text-stroke: 1px rgb(65, 53, 53);
+    }
+
+    #greet:hover {
+      transform: scale(1.1);
+      transition: transform 0.8s ease-in-out;
+    }
+
+    #map:hover {
+      transform: scale(1.1);
+      transition: transform 0.8s ease-in-out;
+      border-radius: 5%;
+    }
+  </style>
+</head>
+
+<body style="background-color:#F4E7D2">
+  <div id="top">
+    <a href="https://www.kimkim.com/c/the-ultimate-guide-to-petra"><img
+        src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\logo.jpeg" alt="" id="logo"></a>
+    <h1 id="center">Archeology unvieled</h1>
+  </div>
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">Gallary</h1>
+  </div>
+  <div>
+    <div class="div-image">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-1\download.jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-1\OIP (2).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-1\OIP (3).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-1\OIP (4).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-1\OIP.jpeg" alt="">
+    </div>
+
+    <div class="div-image">
+      <img class="img" style="width:180px" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-2\OIP (1).jpeg"
+        alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-2\OIP (3).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-2\OIP (5).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-2\OIP.jpeg" alt="">
+      <img class="img" style="width:256px" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-2\OIP (2).jpeg"
+        alt="">
+    </div>
+
+    <div class="div-image">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-3\44295157.jpg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-3\OIP (1).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-3\OIP (4).jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-3\download.jpeg" alt="">
+      <img class="img" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\images\row-3\R.jpeg" alt="">
+    </div>
+
+
+    <hr color="orange">
+    <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">About</h1>
+  </div>
+  <div>
+    <h4 class="heading">1. Egyptian Heritage</h4>
+    <p class="para">Ancient Civilization: Egypt is one of the oldest and most iconic civilizations in history. The
+      ancient
+      Egyptians are known for their monumental architecture, particularly the pyramids of Giza, the Great Sphinx,
+      and the temples of Luxor and Karnak. Their civilization flourished along the Nile River, which was central
+      to their agriculture, transportation, and culture.
+      Hieroglyphics and Art: The Egyptians developed a system of writing known as hieroglyphics, used for
+      religious texts, official inscriptions, and monumental art. Egyptian art and sculpture are renowned for
+      their stylized beauty, often depicting gods, pharaohs, and scenes of daily life.
+      Religious Beliefs: The ancient Egyptians practiced a complex polytheistic religion with a rich mythology
+      involving gods like Ra, Osiris, and Isis. The concept of the afterlife was central to their beliefs, leading
+      to elaborate burial practices, including mummification and tomb construction.
+      Cultural Continuity: Modern Egypt continues to reflect its ancient heritage through its language, religion,
+      and cultural practices. The influence of Coptic Christianity and Islam is significant in shaping
+      contemporary Egyptian society.</p>
+    <h4 class="heading">2. Arabian Heritage</h4>
+    <p class="para">Bedouin Culture: The Arabian Peninsula is home to the Bedouin people, known for their nomadic
+      lifestyle, rich
+      oral traditions, and deep connection to the desert environment. Hospitality, poetry, and a strong sense of
+      honor
+      are central to Bedouin culture.
+      Islamic Legacy: Arabia is the birthplace of Islam, with Mecca and Medina being the religion’s holiest
+      cities.
+      The spread of Islam from the Arabian Peninsula had a profound impact on world history, culture, and
+      architecture, with the Arabic language becoming a key medium for science, philosophy, and art.
+      Architecture and Art: Islamic architecture, with its intricate geometric designs, calligraphy, and emphasis
+      on
+      symmetry, is a hallmark of Arabian heritage. The Grand Mosque in Mecca and the Prophet's Mosque in Medina
+      are
+      iconic religious structures that attract millions of pilgrims annually.
+      Literature and Philosophy: The Arab world has a rich literary tradition, including pre-Islamic poetry, the
+      Quran, and classical works of philosophy, science, and medicine by scholars like Avicenna and Al-Farabi. The
+      Arabian Nights, a collection of Middle Eastern folk tales, is also a significant cultural treasure.
+    </p>
+    <h4 class="heading">3. Turkish Heritage</h4>
+    <p class="para">Ottoman Empire: The Ottoman Empire was a major power from the 14th to the early 20th century,
+      influencing a vast
+      region that included parts of Europe, Asia, and Africa. The Ottomans left a significant cultural and
+      architectural legacy, with Istanbul’s Hagia Sophia, Topkapi Palace, and Blue Mosque being prime examples.
+      Seljuk and Byzantine Influence: Before the Ottomans, the Seljuk Turks and the Byzantine Empire shaped the
+      cultural and architectural landscape of what is now Turkey. The Seljuks introduced Persian influences, while
+      Byzantine contributions are evident in early Christian architecture and mosaics.
+      Cuisine and Crafts: Turkish cuisine, renowned for its diversity and rich flavors, reflects a blend of
+      Central
+      Asian, Middle Eastern, and Mediterranean influences. Turkish coffee, tea, and dishes like kebabs and baklava
+      are
+      famous worldwide. Traditional crafts like carpet weaving, ceramics, and calligraphy are also integral to
+      Turkish
+      heritage.
+      Cultural Synthesis: Turkey’s position as a crossroads between Europe and Asia has led to a unique cultural
+      synthesis, blending elements of Islamic, Christian, and secular traditions. This blend is evident in modern
+      Turkish music, dance, literature, and art, which continue to evolve while preserving a connection to the
+      past.
+    </p>
+  </div>
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">View</h1>
+  <div class="videos">
+    <div class="heritage_videos" id="video1"><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/SZ5JjLdzQ1o?si=Fy_nG5SG1NKvMoo2" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="heritage_videos" id="video2"><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/8AgeNvHZ_ks?si=R2SFhmn97_eSRLdy" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </div>
+  <br>
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">Audio</h1>
+  <div style="display: flex; justify-content:center">
+    <audio align="center" src="K:\PYSPIDERS\WEB_TECHNOLOGIES\TASK\TASK-3\arabian_nights.mp3" controls></audio>
+  </div>
+
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">List Of Eye-Catching Sites</h1>
+
+  <ul>
+    <li>Egypt
+      <ul>
+        <li>Cairo
+          <ul>
+            <li>Pyramids of Giza</li>
+            <li>Egyptian Museum</li>
+            <li>Al-Azhar Mosque</li>
+          </ul>
+        </li>
+        <li>Luxor
+          <ul>
+            <li>Valley of the Kings</li>
+            <li>Karnak Temple</li>
+            <li>Luxor Temple</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Saudi Arabia
+      <ul>
+        <li>Mecca
+          <ul>
+            <li>Masjid al-Haram</li>
+            <li>Kaaba</li>
+            <li>Jabal al-Nour</li>
+          </ul>
+        </li>
+        <li>Medina
+          <ul>
+            <li>Al-Masjid an-Nabawi</li>
+            <li>Quba Mosque</li>
+            <li>Mount Uhud</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Turkey
+      <ul>
+        <li>Istanbul
+          <ul>
+            <li>Hagia Sophia</li>
+            <li>Topkapi Palace</li>
+            <li>Blue Mosque</li>
+          </ul>
+        </li>
+        <li>Cappadocia
+          <ul>
+            <li>Goreme Open-Air Museum</li>
+            <li>Derinkuyu Underground City</li>
+            <li>Uchisar Castle</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>Jordan
+      <ul>
+        <li>Petra
+          <ul>
+            <li>Al-Khazneh (The Treasury)</li>
+            <li>Monastery (Ad Deir)</li>
+            <li>Siq (Canyon entrance)</li>
+          </ul>
+        </li>
+        <li>Amman
+          <ul>
+            <li>Roman Theater</li>
+            <li>Citadel Hill (Jabal al-Qal'a)</li>
+            <li>King Abdullah I Mosque</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">Location Of Petra</h1>
+  <div align="center" width="500px" id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55105.07531866495!2d35.40933293734633!3d30.32060612513381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016930021ab6b1%3A0xe43a697bc3a3e0b9!2sWadi%20Musa%2C%20Jordan!5e0!3m2!1sen!2sin!4v1724150705793!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <hr color="orange">
+  <h1 align="center" style="color:chocolate; -webkit-text-stroke: 1px rgb(65, 53, 53);">Archaeological Sites</h1>
+  <table border="5px" align="cengter"
+    style="border-collapse: collapse; border:2px black solid; background-color:navajowhite">
+    <tr bgcolor="darkorange">
+      <th>Jordan</th>
+      <th>Egypt</th>
+      <th>Yemen</th>
+      <th>Turkey</th>
+      <th>Saudi Arabia</th>
+      <th>Lebanon</th>
+      <th>Oman</th>
+      <th>Syria</th>
+    </tr>
+    <tr>
+      <td>Al-Khazneh (Petra)</td>
+      <td>Pyramids of Giza</td>
+      <td>Old City of Sana'a</td>
+      <td>Hagia Sophia (Istanbul)</td>
+      <td>Masjid al-Haram (Mecca)</td>
+      <td>Byblos Castle (Byblos)</td>
+      <td>Nizwa Fort</td>
+      <td>Umayyad Mosque</td>
+    </tr>
+    <tr>
+      <td>Monastery (Ad Deir) (Petra)</td>
+      <td>Egyptian Museum</td>
+      <td>Great Mosque of Sana'a</td>
+      <td>Topkapi Palace (Istanbul)</td>
+      <td>Kaaba (Mecca)</td>
+      <td>St. John the Baptist Church</td>
+      <td>Bahla Fort</td>
+      <td>Azem Palace </td>
+    </tr>
+    <tr>
+      <td>Siq (Petra)</td>
+      <td>Valley of the Kings</td>
+      <td>Socotra Archipelago</td>
+      <td>Blue Mosque (Istanbul)</td>
+      <td>Jabal al-Nour (Mecca)</td>
+      <td>Temple of Bacchus (Baalbek)</td>
+      <td> Qaboos Grand Mosqu</td>
+      <td>Crac des Chevaliers</td>
+    </tr>
+    <tr>
+      <td>Roman Theater (Amman)</td>
+      <td>Karnak Temple</td>
+      <td>Al Saleh Mosque (Sana'a)
+      </td>
+      <td>Goreme Open-Air Museum </td>
+      <td>Quba Mosque (Medina)</td>
+      <td>Temple of Jupiter (Baalbek)</td>
+      <td>Al Jalali and Al Mirani</td>
+      <td>Palmyra Ruins</td>
+    </tr>
+    <tr>
+      <td>Citadel Hill (Amman)</td>
+      <td>Luxor Temple</td>
+      <td>Socotra Archipelago</td>
+      <td>Derinkuyu Underground City </td>
+      <td>Mount Uhud (Medina)</td>
+      <td>Sidon Sea Castle (Sidon)</td>
+      <td>Jabrin Castle (Bahla)
+      </td>
+      <td>Aleppo Citadel</td>
+    </tr>
+    <tr>
+      <td>Jerash Ruins</td>
+      <td>Abu Simbel Temples</td>
+      <td>Zabid</td>
+      <td>Ephesus Ancient City</td>
+      <td>At-Turaif District (Diriyah)</td>
+      <td>Baalbek Roman Ruins (Baalbek)</td>
+      <td>Ras Al Jinz (Sur)</td>
+      <td>Norias of Hama</td>
+    </tr>
+    <tr>
+      <td>Madaba Mosaic Map</td>
+      <td>Philae Temple</td>
+      <td>Taiz Castle</td>
+      <td>Pamukkale</td>
+      <td>Al-Hijr (Madain Salih)</td>
+      <td>Temple of Eshmun (Sidon)
+      </td>
+      <td>Royal Opera House</td>
+      <td>Saladin's Castle</td>
+    </tr>
+  </table>
+  <hr color="orange">
+  <h1 align="center" id="greet">Thank You, Visit Again ❤️</h1>
+</body>
+
+</html>
+
+
+
